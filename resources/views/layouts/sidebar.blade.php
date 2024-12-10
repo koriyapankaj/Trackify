@@ -28,10 +28,10 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="colors.html">
+            <a class="nav-link" href="{{ route('payment_categories') }}">
                 <svg class="nav-icon">
                     <use xlink:href="{{ asset('vendors/@coreui/icons/svg/free.svg#cil-book') }}"></use>
-                </svg> Expenses
+                </svg> Categories
             </a>
         </li>
 

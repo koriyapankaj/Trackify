@@ -32,13 +32,17 @@
     <link rel="stylesheet" href="{{ asset('css/vendors/simplebar.css') }}">
     <!-- Main styles for this application-->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <!-- We use those styles to show code examples, you should remove them in your application.-->
-    <link href="{{ asset('css/examples.css') }}" rel="stylesheet">
-    <!-- We use those styles to style Carbon ads and CoreUI PRO banner, you should remove them in your application.-->
-    <link href="{{ asset('css/ads.css') }}" rel="stylesheet">
     <script src="{{ asset('js/config.js') }}"></script>
     <script src="{{ asset('js/color-modes.js') }}"></script>
     <link href="{{ asset('vendors/@coreui/chartjs/css/coreui-chartjs.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('/vendors/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">  
+    <script src="{{ asset('/js/sweetalert2.all.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('/css/sweetalert2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
+
+    <script src="{{ asset('/vendors/jquery/jquery.min.js') }}"></script>
+    
 </head>
 
 <body>
