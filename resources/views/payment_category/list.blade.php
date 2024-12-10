@@ -13,7 +13,7 @@
     //open edit model with data
     function editPaymentCategory(id) {
     $.ajax({
-            url: "{{ route('payment_category-edit', ['id' => '']) }}/" + id, // Pass the id here
+            url: "{{ route('payment_category-edit', ['id' => '']) }}/" + id,
             type: "GET",
             success: function (data) {
                 // Handle success
