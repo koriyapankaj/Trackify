@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PaymentCategoryController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
 
 Route::get('/', function () {
@@ -35,4 +36,26 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/edit/{id?}', [PaymentCategoryController::class, 'show'])->name('payment_category-edit');
     });
     
+});
+
+
+Route::get('/clear-cache', function () {
+    // Clear config cache
+    Artisan::call('config:clear');
+    
+    // Clear application cache
+    Artisan::call('cache:clear');
+    
+    // Clear route cache
+    Artisan::call('route:clear');
+    
+    // Clear view cache
+    Artisan::call('view:clear');
+    
+    // Clear compiled files
+    Artisan::call('clear-compiled');
+
+    return response()->json([
+        'message' => 'Caches and compiled files cleared successfully!',
+    ]);
 });
